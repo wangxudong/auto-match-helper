@@ -1,0 +1,27 @@
+{
+	"manifest_version": 3,
+	"name": "自动匹配助手",
+	"version": "1.0",
+	"description": "呵呵",
+	"permissions": ["activeTab", "scripting"],
+	"action": {
+		"default_popup": "popup.html"
+
+	},
+
+	"icons": {
+		"128": "helper.png",
+		"48": "helper.png",
+		"16": "helper.png"
+	},
+
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": ["content.js"]
+	}],
+
+	"web_accessible_resources": [{
+		"resources": ["alarm.wav"],
+		"matches": ["<all_urls>"]
+	}]
+}
