@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random</title>
+<script>
+function submitForm() {
+  var randomIndex = Math.floor(Math.random() * 9) + 1;
+  var randomContent = 'c' + randomIndex;
+  const contentDivs = document.querySelectorAll('.neeko-text');
+  contentDivs[0].textContent= randomContent;
+   console.log("模拟提交")
+
+}
+</script>
+</head>
+<body>
+en_content:<br>
+<div class="neeko-text"></div><div class="neeko-text"></div><div class="neeko-text"></div>
+<div class="neeko-text">I received verification code and I given it but verification  </div>
+<div>&nbsp;</div>
+
+<input autocomplete="off" placeholder="question_tag_name正确" class="arco-select-view-input" value="" style="width: 100%;">
+<div>&nbsp;</div>
+
+<button onclick="submitForm()"  class="arco-btn arco-btn-primary arco-btn-size-default arco-btn-shape-square operation-btn_ttpxh8vI" type="button"><span>提交</span></button>
+</body>
+</html>
